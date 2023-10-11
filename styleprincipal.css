@@ -1,3 +1,6 @@
+/* ************************************************************************************************
+*********************** HEADER ************************************************************* **/
+
 body{
     font-family: 'poppins';
 }
@@ -31,7 +34,11 @@ header p {
     font-size: 20px;
 }
 
-#encabezado {
+
+/* *****************************************************************************************************
+*************** MAIN INICIO ****************************************** */
+
+.encabezado {
     background: url(winery-61-scaled.jpg);
     background-size: cover;
     padding: 155px 0 ;
@@ -43,12 +50,12 @@ h1 {
     color: #080808;
 }
 
-#encabezado p {
+.encabezado p {
     width: 55%;
     color: rgb(15, 15, 15)
 }
 
-#historia {
+.historia {
     background-color: rgb(250, 246, 241);
 }
 
@@ -65,7 +72,7 @@ h2 {
     width: 90%;
 }
 
-#contacto {
+.contacto {
     display: flex;
     justify-content: space-around;
     background: url(winery-37.png);
@@ -74,17 +81,17 @@ h2 {
     padding: 80px 0;
 }
 
-#contacto .izquierda  {
+.contacto .izquierda  {
     width: 40%;
 }
 
-#contacto .izquierda p {
+.contacto .izquierda p {
     font-size: 14px;
     color: #666;
 }
 
 
-#contacto .derecha {
+.contacto .derecha {
     background: #280400;
     color : #fff;
     padding: 80px 30px ;
@@ -101,6 +108,82 @@ h2 {
     padding:  15px 30px;
 }
 
+
+
+/* ********************************************************************************************
+***************** MAIN CATALOGO *****************************************************************/
+
+.tarjetas {
+    display: flex;
+    justify-content: center;
+    background: #efefef;
+}
+
+.tarjeta img {
+    width: 100%;
+}
+
+.tarjeta {
+   width: 15%; 
+   margin: 30px 30px 30px 30px;
+   background: white;
+   padding: 20px;
+   text-align: center;
+   box-shadow: 1px 1px 1px #00000030;
+}
+.tarjeta h2 {
+    font-size: 25px;
+
+}
+
+.tarjeta p {
+    font-size: 12px;
+}
+
+.pie-pagina {
+    width: 100%;
+    background-color: #280400;
+    
+}
+
+
+/**************************************************************************************
+***************** MAIN FROMULARIO **************************************************/
+
+.contenedor-form {
+    width: 400px;
+    background-color: rgb(250, 246, 241);
+    padding: 50px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+.contenedor-form p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: black;
+    font-family: serif;
+}
+
+.contenedor-form h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: black;
+
+}
+
+.input {
+    display: flex;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    border: 10px;
+    font-size: 20px;
+}
+
+/** ******************************************* FOOTER ******************************** */
 
 .pie-pagina {
     width: 100%;
