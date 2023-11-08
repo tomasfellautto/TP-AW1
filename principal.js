@@ -3,15 +3,24 @@ import productos from "./productos.js";
 // Referencia
 const principal = document.getElementById("productos")
 
-principal.innerHTML = `<h2>${productos.tienda}</h2>`
+let contenidoinyectar = ``;
+principal.innerHTML = `<h2></h2>`
 
 // recorrer array producots
 
 productos.articulos.forEach((articulo)=>{
-    principal.innerHTML += `<img src="syrah.png" alt="">
-    <h2>$</h2>
-    <div>${articulo.titulo}Precio: $6000</div> 
+    principal.innerHTML += `<div class="tarjeta">
+    <img src=${articulo.imagen} alt="">
+    <h2>${articulo.titulo}</h2>
+    <div>${articulo.precio}</div> 
     <p class="Varietal"></p>
-    <p>Si eres amante del vino tinto con carácter y complejidad, el Syrah es una elección excelente 
-        para explorar y disfrutar en una variedad de ocasiones y maridajes gastronómicos. </p>`
+    <p>${articulo.descripcion}</p>
+    <button>${articulo.agregar}</button>                  
+</div>`
+})
+
+fetch("./productos.json").then((datos)=>{
+    return datos.json()
+}).then((datos)=>{
+    console.log(datos)
 })
